@@ -1,9 +1,10 @@
 import express from 'express';
 import path from 'path';
+import { UsersModuleRouter } from '@modules/users';
 
 const rootRouter = express.Router();
 
-const modulesRouters = [];
+const modulesRouters = [ UsersModuleRouter ];
 
 rootRouter.all(globalThis.SERVER.all);
 rootRouter.get('/', (req, res) => {

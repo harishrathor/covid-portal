@@ -90,6 +90,8 @@
   },
   "exclude":[
     "./node_modules",
-    "./dist"
+    "./dist",
+    "./test",
+    "./src/**/*.test.ts"
   ]
 }

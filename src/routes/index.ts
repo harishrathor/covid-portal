@@ -1,9 +1,9 @@
-import express from 'express';
+import { Router } from 'express';
 import path from 'path';
 import { UsersModuleRouter } from '@modules/users';
 import { CovidModuleRouter } from '@modules/covid'
 
-const rootRouter = express.Router();
+const rootRouter = Router();
 
 const modulesRouters = [ UsersModuleRouter, CovidModuleRouter ];
 
